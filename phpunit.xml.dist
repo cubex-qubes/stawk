@@ -1,0 +1,20 @@
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         strict="true"
+         verbose="true">
+  <php>
+    <env name="CUBEX_ENV" value="development"/>
+    <env name="CUBEX_UNITTEST" value="true"/>
+    <ini name="display_errors" value="-1"/>
+  </php>
+
+  <testsuites>
+    <testsuite name="Stawk Test Suite">
+      <directory>./src/Qubes/Stawk/Tests</directory>
+      <directory>./src/Qubes/Stawk/*/Tests</directory>
+      <directory>./src/Qubes/Stawk/*/*/Tests</directory>
+    </testsuite>
+  </testsuites>
+
+</phpunit>
+
